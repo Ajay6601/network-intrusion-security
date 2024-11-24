@@ -1,0 +1,33 @@
+[ 2024-11-24 13:11:02,116 ] 23 root - INFO - Logging system initialized.
+[ 2024-11-24 13:11:12,434 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2024-11-24 13:11:12,464 ] 107 dagshub - INFO - Accessing as ajayreddy6601
+[ 2024-11-24 13:11:12,723 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/ajayreddy6601/network-intrusion-security "HTTP/1.1 200 OK"
+[ 2024-11-24 13:11:12,898 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2024-11-24 13:11:12,907 ] 107 dagshub - INFO - Initialized MLflow to track repo "ajayreddy6601/network-intrusion-security"
+[ 2024-11-24 13:11:12,910 ] 107 dagshub - INFO - Repository ajayreddy6601/network-intrusion-security initialized!
+[ 2024-11-24 13:11:36,732 ] 42 root - INFO - Start data Ingestion
+[ 2024-11-24 13:11:42,632 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2024-11-24 13:11:42,632 ] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2024-11-24 13:11:42,633 ] 75 root - INFO - Exporting train and test file path.
+[ 2024-11-24 13:11:42,867 ] 84 root - INFO - Exported train and test file path.
+[ 2024-11-24 13:11:42,869 ] 45 root - INFO - Data Ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\11_24_2024_13_11_04\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\11_24_2024_13_11_04\\data_ingestion\\ingested\\test.csv')
+[ 2024-11-24 13:11:42,903 ] 55 root - INFO - Initiate the data Validation
+[ 2024-11-24 13:11:43,166 ] 32 root - INFO - Required number of columns:2
+[ 2024-11-24 13:11:43,166 ] 33 root - INFO - Data frame has columns:31
+[ 2024-11-24 13:11:43,166 ] 32 root - INFO - Required number of columns:2
+[ 2024-11-24 13:11:43,166 ] 33 root - INFO - Data frame has columns:31
+[ 2024-11-24 13:11:43,738 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2024-11-24 13:11:43,738 ] 65 root - INFO - Starting data transformation
+[ 2024-11-24 13:11:43,813 ] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2024-11-24 13:11:43,814 ] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2024-11-24 13:11:43,850 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-11-24 13:11:43,858 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-11-24 13:11:43,859 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-11-24 13:11:43,865 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-11-24 13:22:14,047 ] 870 urllib3.connectionpool - WARNING - Retrying (Retry(total=4, connect=5, read=5, redirect=5, status=5)) after connection broken by 'SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')': /ajayreddy6601/network-intrusion-security.mlflow/api/2.0/mlflow-artifacts/artifacts/a230b1581ea643df8b01ed27d9069c4c/dd4fc4f41ecc4b8bad5df1a78a1b6133/artifacts/model/model.pkl
+[ 2024-11-24 13:22:26,119 ] 870 urllib3.connectionpool - WARNING - Retrying (Retry(total=3, connect=5, read=5, redirect=5, status=5)) after connection broken by 'SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:2384)')': /ajayreddy6601/network-intrusion-security.mlflow/api/2.0/mlflow-artifacts/artifacts/a230b1581ea643df8b01ed27d9069c4c/dd4fc4f41ecc4b8bad5df1a78a1b6133/artifacts/model/model.pkl
+[ 2024-11-24 13:23:10,308 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-11-24 13:23:10,309 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-11-24 13:23:10,309 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2024-11-24 13:23:10,455 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2024-11-24 13:23:10,456 ] 147 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\11_24_2024_13_11_04\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.9910001011224593), precision_score=np.float64(0.9902991107518189), recall_score=np.float64(0.9917020845982595)), test_metric_artifact=ClassificationMetricArtifact(f1_score=np.float64(0.9751729751729752), precision_score=np.float64(0.9653505237711523), recall_score=np.float64(0.9851973684210527)))
