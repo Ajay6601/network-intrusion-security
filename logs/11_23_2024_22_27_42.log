@@ -1,7 +1,0 @@
-[ 2024-11-23 22:27:42,666 ] 23 root - INFO - Logging system initialized.
-[ 2024-11-23 22:27:49,227 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
-[ 2024-11-23 22:27:49,234 ] 107 dagshub - INFO - Accessing as ajayreddy6601
-[ 2024-11-23 22:27:49,395 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/ajayreddy6601/network-intrusion-security "HTTP/1.1 200 OK"
-[ 2024-11-23 22:27:49,543 ] 1038 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
-[ 2024-11-23 22:27:49,554 ] 107 dagshub - INFO - Initialized MLflow to track repo "ajayreddy6601/network-intrusion-security"
-[ 2024-11-23 22:27:49,554 ] 107 dagshub - INFO - Repository ajayreddy6601/network-intrusion-security initialized!
